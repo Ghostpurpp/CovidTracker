@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:CovidTracker.ViewModels"
+             x:Class="CovidTracker.Views.NewsPage"
+             Title="News">
+
+    <ContentPage.BindingContext>
+        <vm:NewsViewModel/>
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView 
+                x:Name="NewsList"
+                ItemsSource="{Binding Articles}"
+                RowHeight="95"
+                SelectedItem="{Binding CurrentArticle}"
+                ItemSelected="NewsList_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Horizontal">
+                                <Image 
+                                    Source="{Binding UrlToImage}" 
+                                    WidthRequest="150"
+                                    Aspect="Fill"/>
+                                <StackLayout 
+                                    Orientation="Vertical" 
+                                    Padding="5">
+                                    <Label Text="{Binding Title}" />
+                                </StackLayout>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

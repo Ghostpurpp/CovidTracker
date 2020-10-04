@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CovidTracker.Views.GeneralStatsPage"
+             xmlns:vm="clr-namespace:CovidTracker.ViewModels"
+             Title="Stats">
+
+    <ContentPage.BindingContext>
+        <vm:GeneralStatsViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout 
+                Grid.Column="0" 
+                Grid.Row="0" 
+                Grid.ColumnSpan="2"
+                Orientation="Horizontal"
+                Padding="25,25,25,10">
+
+                <Picker 
+                    ItemsSource="{Binding Location}"
+                    SelectedIndex="{Binding Region}"
+                    Title="Global"
+                    TitleColor="Black"
+                    HorizontalOptions="StartAndExpand" 
+                    VerticalOptions="CenterAndExpand"
+                    WidthRequest="175"/>
+                <Label 
+                    Text="Last Updated" 
+                    TextColor="Black"
+                    HorizontalOptions="EndAndExpand" 
+                    VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+
+            <StackLayout 
+                Grid.Column="0" 
+                Grid.Row="1" 
+                Grid.ColumnSpan="2"
+                Padding="20,10">
+
+                <Frame HeightRequest="60" Margin="0,0,0,10">
+                    <StackLayout>
+                        <Label Text="Total Cases"/>
+                        <Label Text="{Binding Cases}"/>
+                    </StackLayout>
+                </Frame>
+                <Frame HeightRequest="60" Margin="0,0,0,10">
+                    <StackLayout>
+                        <Label Text="Total Deaths"/>
+                        <Label Text="{Binding Deaths}"/>
+                    </StackLayout>
+                </Frame>
+                <Frame HeightRequest="60" Margin="0,0,0,10">
+                    <StackLayout>
+                        <Label Text="Total Recoveries"/>
+                        <Label Text="{Binding Recovered}"/>
+                    </StackLayout>
+                </Frame>
+                <StackLayout Orientation="Horizontal">
+                    <Frame 
+                        HeightRequest="60" 
+                        Margin="0,0,0,10" 
+                        HorizontalOptions="FillAndExpand">
+                        <StackLayout>
+                            <Label Text="Total Active"/>
+                            <Label Text="{Binding Active}"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame 
+                        HeightRequest="60" 
+                        Margin="0,0,0,10" 
+                        HorizontalOptions="FillAndExpand">
+                        <StackLayout>
+                            <Label Text="Total Tests"/>
+                            <Label Text="{Binding Tests}"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

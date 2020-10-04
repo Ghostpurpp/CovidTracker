@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CovidTracker.Views.InfoPage"
+             xmlns:controls="clr-namespace:CovidTracker.Views.Components"
+             Title="Info">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <controls:CardView 
+                    CardTitle="What you need to know" 
+                    CardContent="Anyone can have mild to severe symptoms.&#10;Older adults and people who have 
+                    severe underlying medical conditions like heart or lung disease or diabetes seem to be 
+                    at higher risk for developing more serious complications from COVID-19 illness."/>
+
+                <controls:CardView 
+                    CardTitle="Watch for Symptoms" 
+                    CardContent="Anyone can have mild to severe symptoms.&#10;Older adults and people who have 
+                    severe underlying medical conditions like heart or lung disease or diabetes seem to be 
+                    at higher risk for developing more serious complications from COVID-19 illness."/>
+
+                <controls:CardView 
+                    CardTitle="When to seek emergency medical attention" 
+                    CardContent="Anyone can have mild to severe symptoms.&#10;Older adults and people who have 
+                    severe underlying medical conditions like heart or lung disease or diabetes seem to be 
+                    at higher risk for developing more serious complications from COVID-19 illness."/>
+
+                <controls:CardView 
+                    CardTitle="How to Protect Yourself and Others"
+                    CardContent="Anyone can have mild to severe symptoms. \nOlder adults and people who have 
+                    severe underlying medical conditions like heart or lung disease or diabetes seem to be 
+                    at higher risk for developing more serious complications from COVID-19 illness."/>
+
+                <controls:CardView 
+                    CardTitle="Caring for Someone Sick at Home" 
+                    CardContent="Anyone can have mild to severe symptoms. Older adults and people who have 
+                    severe underlying medical conditions like heart or lung disease or diabetes seem to be 
+                    at higher risk for developing more serious complications from COVID-19 illness."/>
+
+                <controls:CardView 
+                    CardTitle="What to Do If You Are Sick" 
+                    CardContent="Anyone can have mild to severe symptoms. Older adults and people who have 
+                    severe underlying medical conditions like heart or lung disease or diabetes seem to be 
+                    at higher risk for developing more serious complications from COVID-19 illness."/>
+
+                <controls:CardView 
+                    CardTitle="What is the difference between Influenza (Flu) and COVID-19?" 
+                    CardContent="Anyone can have mild to severe symptoms. Older adults and people who have 
+                    severe underlying medical conditions like heart or lung disease or diabetes seem to be 
+                    at higher risk for developing more serious complications from COVID-19 illness."/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
