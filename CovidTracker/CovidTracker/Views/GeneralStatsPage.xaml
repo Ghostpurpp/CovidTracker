@@ -50,20 +50,41 @@
 
                 <Frame HeightRequest="60" Margin="0,0,0,10">
                     <StackLayout>
-                        <Label Text="Total Cases"/>
-                        <Label Text="{Binding Cases}"/>
+                        <Label 
+                            Text="Total Cases" 
+                            TextColor="Black"
+                            FontSize="16"/>
+                        <Label 
+                            Text="{Binding Cases}" 
+                            TextColor="Blue"
+                            FontSize="Medium"
+                            Padding="0,10,0,0"/>
                     </StackLayout>
                 </Frame>
                 <Frame HeightRequest="60" Margin="0,0,0,10">
                     <StackLayout>
-                        <Label Text="Total Deaths"/>
-                        <Label Text="{Binding Deaths}"/>
+                        <Label 
+                            Text="Total Deaths" 
+                            TextColor="Black"
+                            FontSize="16"/>
+                        <Label 
+                            Text="{Binding Deaths}" 
+                            TextColor="Red"
+                            FontSize="Medium"
+                            Padding="0,10,0,0"/>
                     </StackLayout>
                 </Frame>
                 <Frame HeightRequest="60" Margin="0,0,0,10">
                     <StackLayout>
-                        <Label Text="Total Recoveries"/>
-                        <Label Text="{Binding Recovered}"/>
+                        <Label 
+                            Text="Total Recoveries" 
+                            TextColor="Black"
+                            FontSize="16"/>
+                        <Label 
+                            Text="{Binding Recovered}" 
+                            TextColor="Green"
+                            FontSize="Medium"
+                            Padding="0,10,0,0"/>
                     </StackLayout>
                 </Frame>
                 <StackLayout Orientation="Horizontal">
@@ -72,8 +93,15 @@
                         Margin="0,0,0,10" 
                         HorizontalOptions="FillAndExpand">
                         <StackLayout>
-                            <Label Text="Total Active"/>
-                            <Label Text="{Binding Active}"/>
+                            <Label 
+                                Text="Total Active" 
+                                TextColor="Black"
+                                FontSize="16"/>
+                            <Label 
+                                Text="{Binding Active}" 
+                                TextColor="Orange"
+                                FontSize="Medium"
+                                Padding="0,10,0,0"/>
                         </StackLayout>
                     </Frame>
                     <Frame 
@@ -81,8 +109,15 @@
                         Margin="0,0,0,10" 
                         HorizontalOptions="FillAndExpand">
                         <StackLayout>
-                            <Label Text="Total Tests"/>
-                            <Label Text="{Binding Tests}"/>
+                            <Label 
+                                Text="Total Tests" 
+                                TextColor="Black"
+                                FontSize="16"/>
+                            <Label 
+                                Text="{Binding Tests}" 
+                                TextColor="Purple"
+                                FontSize="Medium"
+                                Padding="0,10,0,0"/>
                         </StackLayout>
                     </Frame>
                 </StackLayout>

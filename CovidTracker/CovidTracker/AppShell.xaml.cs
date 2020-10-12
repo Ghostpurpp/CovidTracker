@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using CovidTracker.Views;
+﻿using CovidTracker.Views;
 using Xamarin.Forms;
 
 namespace CovidTracker
 {
-    public partial class AppShell : Xamarin.Forms.Shell
+    public partial class AppShell : Shell
     {
         public AppShell()
         {
@@ -14,7 +12,7 @@ namespace CovidTracker
             Routing.RegisterRoute(nameof(InfoPage), typeof(InfoPage));
             Routing.RegisterRoute(nameof(NewsPage), typeof(NewsPage));
             Routing.RegisterRoute(nameof(DetailedStatsPage), typeof(DetailedStatsPage));
+            Routing.RegisterRoute(nameof(MapDataPage), typeof(MapDataPage));
         }
-
     }
 }

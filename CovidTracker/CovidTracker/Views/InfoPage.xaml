@@ -9,45 +9,34 @@
             <StackLayout>
                 <controls:CardView 
                     CardTitle="What you need to know" 
-                    CardContent="Anyone can have mild to severe symptoms.&#10;Older adults and people who have 
+                    CardContent="Anyone can have mild to severe symptoms.&#10;&#10;Older adults and people who have 
                     severe underlying medical conditions like heart or lung disease or diabetes seem to be 
                     at higher risk for developing more serious complications from COVID-19 illness."/>
 
                 <controls:CardView 
                     CardTitle="Watch for Symptoms" 
-                    CardContent="Anyone can have mild to severe symptoms.&#10;Older adults and people who have 
-                    severe underlying medical conditions like heart or lung disease or diabetes seem to be 
-                    at higher risk for developing more serious complications from COVID-19 illness."/>
+                    CardContent="People with COVID-19 have had a wide range of symptoms reported – ranging from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19:&#10;&#10;Fever or chills&#10;Cough&#10;Shortness of breath or difficulty breathing&#10;Fatigue&#10;Muscle or body aches&#10;Headache&#10;New loss of taste or smell&#10;Sore throat&#10;Congestion or runny nose&#10;Nausea or vomiting&#10;Diarrhea&#10;&#10;This list does not include all possible symptoms. CDC will continue to update this list as we learn more about COVID-19."/>
 
                 <controls:CardView 
                     CardTitle="When to seek emergency medical attention" 
-                    CardContent="Anyone can have mild to severe symptoms.&#10;Older adults and people who have 
-                    severe underlying medical conditions like heart or lung disease or diabetes seem to be 
-                    at higher risk for developing more serious complications from COVID-19 illness."/>
-
-                <controls:CardView 
-                    CardTitle="How to Protect Yourself and Others"
-                    CardContent="Anyone can have mild to severe symptoms. \nOlder adults and people who have 
-                    severe underlying medical conditions like heart or lung disease or diabetes seem to be 
-                    at higher risk for developing more serious complications from COVID-19 illness."/>
-
-                <controls:CardView 
-                    CardTitle="Caring for Someone Sick at Home" 
-                    CardContent="Anyone can have mild to severe symptoms. Older adults and people who have 
-                    severe underlying medical conditions like heart or lung disease or diabetes seem to be 
-                    at higher risk for developing more serious complications from COVID-19 illness."/>
-
-                <controls:CardView 
-                    CardTitle="What to Do If You Are Sick" 
-                    CardContent="Anyone can have mild to severe symptoms. Older adults and people who have 
-                    severe underlying medical conditions like heart or lung disease or diabetes seem to be 
-                    at higher risk for developing more serious complications from COVID-19 illness."/>
+                    CardContent="When to seek emergency medical attention Look for emergency warning signs* for COVID-19. If someone is showing any of these signs, seek emergency medical care immediately:&#10;
+                    &#10;Trouble breathing&#10;Persistent pain or pressure in the chest&#10;New confusion
+                    &#10;Inability to wake or stay awake&#10;Bluish lips or face&#10;&#10;*This list is not all possible symptoms. Please call your medical provider for any other symptoms that are severe or concerning to you.
+                    &#10;&#10;Call 911 or call ahead to your local emergency facility: Notify the operator that you are seeking care for someone who has or may have COVID-19."/>
 
                 <controls:CardView 
                     CardTitle="What is the difference between Influenza (Flu) and COVID-19?" 
-                    CardContent="Anyone can have mild to severe symptoms. Older adults and people who have 
-                    severe underlying medical conditions like heart or lung disease or diabetes seem to be 
-                    at higher risk for developing more serious complications from COVID-19 illness."/>
+                    CardContent="Influenza (Flu) and COVID-19 are both contagious respiratory illnesses, but they are caused by different viruses. COVID-19 is caused by infection with a new coronavirus (called SARS-CoV-2) and flu is caused by infection with influenza viruses. Because some of the symptoms of flu and COVID-19 are similar, it may be hard to tell the difference between them based on symptoms alone, and testing may be needed to help confirm a diagnosis. Flu and COVID-19 share many characteristics, but there are some key differences between the two.
+                    &#10;&#10;While more is learned every day, there is still a lot that is unknown about COVID-19 and the virus that causes it. This page compares COVID-19 and flu, given the best available information to date."/>
+
+                <Button 
+                    x:Name="SeeBtn"
+                    Text="Source of Information: Centers for Disease Controls and Prevention" 
+                    BackgroundColor="Transparent"
+                    TextColor="LightGreen"
+                    Clicked="SeeBtn_Clicked"
+                    FontSize="Small"
+                    HorizontalOptions="Center"/>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

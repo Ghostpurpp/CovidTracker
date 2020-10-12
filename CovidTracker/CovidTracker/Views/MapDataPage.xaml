@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:CovidTracker.ViewModels"
+             x:Class="CovidTracker.Views.MapDataPage"
+             Title="Country Details">
+
+    <ContentPage.BindingContext>
+        <vm:MapDataViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label 
+                Text="{Binding Country}" 
+                HorizontalOptions="Center" 
+                Margin="0,10,0,40"
+                TextColor="Black"
+                FontSize="Large"/>
+            <Label Text="{Binding Cases}" TextColor="Black" FontSize="Medium"/>
+            <Label Text="{Binding Deaths}" TextColor="Black" FontSize="Medium"/>
+            <Label Text="{Binding Recovered}" TextColor="Black" FontSize="Medium"/>
+            <Label Text="{Binding Active}" TextColor="Black" FontSize="Medium"/>
+            <Label Text="{Binding Tests}" TextColor="Black" FontSize="Medium"/>
+            <Label Text="{Binding Critical}" TextColor="Black" FontSize="Medium"/>
+            <Label Text="{Binding CasesPerMillion}" TextColor="Black" FontSize="Medium"/>
+            <Label Text="{Binding DeathsPerMillion}" TextColor="Black" FontSize="Medium"/>
+            <Label Text="{Binding RecoveredPerMillion}" TextColor="Black" FontSize="Medium"/>
+            <Label Text="{Binding ActivePerMillion}" TextColor="Black" FontSize="Medium"/>
+            <Label Text="{Binding TestsPerMillion}" TextColor="Black" FontSize="Medium"/>
+            <Label Text="{Binding CriticalPerMillion}" TextColor="Black" FontSize="Medium"/>
+            <Label Text="{Binding Population}" TextColor="Black" FontSize="Medium"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

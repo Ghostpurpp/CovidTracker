@@ -12,9 +12,13 @@
     
     <ContentPage.Content>
         <ScrollView>
-            <Frame>
+            <!--<Frame>
                 <forms:ChartView HeightRequest="300"/>
-            </Frame>
+            </Frame>-->
+            <Label 
+                Text="Feature Coming Soon..." 
+                HorizontalOptions="Center"
+                VerticalOptions="Center"/>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

@@ -149,9 +149,11 @@ namespace CovidTracker.ViewModels
         {
             List<ContinentData> continents = await covidService.GetContinents();
             List<CountryData> countries = await covidService.GetCountries();
-            List<string> allLocations = new List<string>();
-            allLocations.Add("Global");
-            foreach(var i in continents)
+            List<string> allLocations = new List<string>
+            {
+                "Global"
+            };
+            foreach (var i in continents)
             {
                 allLocations.Add(i.Continent);
             }
