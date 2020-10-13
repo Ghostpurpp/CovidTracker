@@ -30,15 +30,15 @@
     </Shell.Resources>
 
     <TabBar>
-        <Tab Title="Stats" Icon="tab_about.png" Route="GeneralStatsPage">
-            <ShellContent Title="General">
+        <Tab Title="Stats" Icon="stats.png" Route="GeneralStatsPage">
+            <ShellContent Title="General" Icon="stats.png">
                 <local:GeneralStatsPage />
             </ShellContent>
-            <ShellContent Title="Detailed">
+            <ShellContent Title="Detailed" Icon="detail.png">
                 <local:DetailedStatsPage />
             </ShellContent>
         </Tab>
-        <ShellContent Title="Map" Icon="tab_about.png" ContentTemplate="{DataTemplate local:MapPage}" />
+        <ShellContent Title="Map" Icon="map.png" ContentTemplate="{DataTemplate local:MapPage}" />
         <ShellContent Title="News" Icon="tab_feed.png" ContentTemplate="{DataTemplate local:NewsPage}" />
         <ShellContent Title="Info" Icon="tab_about.png" ContentTemplate="{DataTemplate local:InfoPage}" />
     </TabBar>
