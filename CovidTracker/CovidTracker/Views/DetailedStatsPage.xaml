@@ -12,13 +12,42 @@
     
     <ContentPage.Content>
         <ScrollView>
-            <!--<Frame>
-                <forms:ChartView HeightRequest="300"/>
-            </Frame>-->
-            <Label 
-                Text="Feature Coming Soon..." 
-                HorizontalOptions="Center"
-                VerticalOptions="Center"/>
+            <StackLayout>
+                <Picker 
+                    ItemsSource="{Binding Location}"
+                    SelectedIndex="{Binding Region}"
+                    Title="Afghanistan"
+                    TitleColor="Black"
+                    HorizontalOptions="StartAndExpand" 
+                    VerticalOptions="CenterAndExpand"
+                    WidthRequest="175"
+                    Margin="15,15,15,5"/>
+                
+                <Frame 
+                    Margin="15" 
+                    BackgroundColor="#2da4ed"
+                    CornerRadius="10">
+                    <StackLayout>
+                        <forms:ChartView  HeightRequest="300" Chart="{Binding CaseChart}"/>
+                    </StackLayout>
+                </Frame>
+                <Frame 
+                    Margin="15" 
+                    BackgroundColor="#fc3535"
+                    CornerRadius="10">
+                    <StackLayout>
+                        <forms:ChartView HeightRequest="300" Chart="{Binding DeathChart}"/>
+                    </StackLayout>
+                </Frame>
+                <Frame 
+                    Margin="15" 
+                    BackgroundColor="#27e676"
+                    CornerRadius="10">
+                    <StackLayout>
+                        <forms:ChartView HeightRequest="300" Chart="{Binding RecoveredChart}"/>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

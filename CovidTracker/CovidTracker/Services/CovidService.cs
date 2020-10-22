@@ -72,7 +72,7 @@ namespace CovidTracker.Services
             return foundCountry;
         }
 
-        public async Task<CountryStat> CountryStats(string country)
+        public async Task<Timeline> CountryStats(string country)
         {
             var res = await client.GetAsync($"https://corona.lmao.ninja/v2/historical/{country}?lastdays=30");
 
@@ -80,7 +80,7 @@ namespace CovidTracker.Services
 
             CountryStat stat = JsonConvert.DeserializeObject<CountryStat>(content);
 
-            return stat;
+            return stat.Timeline;
         }
     }
 }
