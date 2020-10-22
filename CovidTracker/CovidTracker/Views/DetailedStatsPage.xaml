@@ -28,6 +28,12 @@
                     BackgroundColor="#2da4ed"
                     CornerRadius="10">
                     <StackLayout>
+                        <Label 
+                            Text="Cases Over Time(days)" 
+                            TextColor="White" 
+                            FontSize="Medium" 
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"/>
                         <forms:ChartView  HeightRequest="300" Chart="{Binding CaseChart}"/>
                     </StackLayout>
                 </Frame>
@@ -36,6 +42,12 @@
                     BackgroundColor="#fc3535"
                     CornerRadius="10">
                     <StackLayout>
+                        <Label 
+                            Text="Deaths Over Time(days)" 
+                            TextColor="White" 
+                            FontSize="Medium" 
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"/>
                         <forms:ChartView HeightRequest="300" Chart="{Binding DeathChart}"/>
                     </StackLayout>
                 </Frame>
@@ -44,6 +56,12 @@
                     BackgroundColor="#27e676"
                     CornerRadius="10">
                     <StackLayout>
+                        <Label 
+                            Text="Recoveries Over Time(days)" 
+                            TextColor="White" 
+                            FontSize="Medium" 
+                            FontAttributes="Bold"
+                            HorizontalTextAlignment="Center"/>
                         <forms:ChartView HeightRequest="300" Chart="{Binding RecoveredChart}"/>
                     </StackLayout>
                 </Frame>

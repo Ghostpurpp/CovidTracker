@@ -35,11 +35,6 @@
                     HorizontalOptions="StartAndExpand" 
                     VerticalOptions="CenterAndExpand"
                     WidthRequest="175"/>
-                <Label 
-                    Text="Last Updated" 
-                    TextColor="Black"
-                    HorizontalOptions="EndAndExpand" 
-                    VerticalOptions="CenterAndExpand"/>
             </StackLayout>
 
             <StackLayout 
@@ -49,29 +44,59 @@
                 Padding="20,10">
 
                 <Frame HeightRequest="60" Margin="0,0,0,10">
-                    <StackLayout>
-                        <Label 
-                            Text="Total Cases" 
-                            TextColor="Black"
-                            FontSize="16"/>
-                        <Label 
-                            Text="{Binding Cases}" 
-                            TextColor="Blue"
-                            FontSize="Medium"
-                            Padding="0,10,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout>
+                            <Label 
+                                Text="Total Cases" 
+                                TextColor="Black"
+                                FontSize="16"/>
+                            <Label 
+                                Text="{Binding Cases}" 
+                                TextColor="Blue"
+                                FontSize="Medium"
+                                Padding="0,10,0,0"/>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="EndAndExpand">
+                            <Label 
+                                Text="Today" 
+                                TextColor="Black"
+                                FontSize="16"
+                                HorizontalOptions="End"/>
+                            <Label 
+                                Text="{Binding TodayCases}" 
+                                TextColor="Blue"
+                                FontSize="Medium"
+                                Padding="0,10,0,0"
+                                HorizontalOptions="End"/>
+                        </StackLayout>
                     </StackLayout>
                 </Frame>
                 <Frame HeightRequest="60" Margin="0,0,0,10">
-                    <StackLayout>
-                        <Label 
-                            Text="Total Deaths" 
-                            TextColor="Black"
-                            FontSize="16"/>
-                        <Label 
-                            Text="{Binding Deaths}" 
-                            TextColor="Red"
-                            FontSize="Medium"
-                            Padding="0,10,0,0"/>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout>
+                            <Label 
+                                Text="Total Deaths" 
+                                TextColor="Black"
+                                FontSize="16"/>
+                            <Label 
+                                Text="{Binding Deaths}" 
+                                TextColor="Red"
+                                FontSize="Medium"
+                                Padding="0,10,0,0"/>
+                        </StackLayout>
+                        <StackLayout HorizontalOptions="EndAndExpand">
+                            <Label 
+                                Text="Today" 
+                                TextColor="Black"
+                                FontSize="16"
+                                HorizontalOptions="End"/>
+                            <Label 
+                                Text="{Binding TodayDeaths}" 
+                                TextColor="Red"
+                                FontSize="Medium"
+                                Padding="0,10,0,0"
+                                HorizontalOptions="End"/>
+                        </StackLayout>
                     </StackLayout>
                 </Frame>
                 <Frame HeightRequest="60" Margin="0,0,0,10">
